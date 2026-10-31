@@ -1,56 +1,16 @@
-# Hi there, I'm fumi (Full-stack & P2P Trust Architect)  
+# 松田晴史
 
+武蔵野大学 経済学部2年。東京に住んでいます。
+個人でWebサービスを作って、運営しています。
 
-  I am a university student and developer passionate about building high-trust, secure, and decentralized systems. I focus on creating C2C (peer-to-peer) platforms that bridge digital security with real-world interactions, eliminating friction and visual-evaluation noise.  
+## 公開しているもの
 
-    ---  
+- [公有地ソート](https://github.com/fumi3333/sort) — 全国の自治体が公開する公有地と廃校の横断検索。 https://sort.fumiproject.dev
+- [リゾートソート](https://github.com/fumi3333/resort-sort) — リゾートバイト求人の横断検索と、労働条件の月次レポート。
+- [jiritsu](https://github.com/fumi3333/jiritsu) — 自立支援医療（精神通院）の申請を手伝うツール。
+- [phone-robot](https://github.com/fumi3333/phone-robot) — スマートフォンを頭脳にした自律走行ロボット。部屋の地図を作りながら走ります。
+- [にじ歌サーチ](https://github.com/fumi3333/niji-uta) — にじさんじの歌枠を検索できるデータベース。
 
-      ## Tech Stack & Skills  
+## その他
 
-        - Frontend: Next.js (App Router), React 19, TypeScript, Tailwind CSS, shadcn/ui, Flutter (Dart)  
-        - Backend / BaaS: Firebase (Authentication, Cloud Firestore, Cloud Storage, Cloud Functions)  
-        - Payments / API: Stripe Connect (Express Accounts, Escrow Manual Capture), OpenBD (ISBN API)  
-        - Testing & Security: Zod (Schema Validation), IDOR Mitigation, Firestore Security Rules  
-
-          ---  
-
-            ## Key Projects  
-
-              ### 1. [Musalink](https://github.com/fumi3333/musalink) (Live)  
-              > A Closed-Loop C2C Textbook & Goods Marketplace for Students  
-              - Live URL: https://musa-link.web.app/  
-              - Description: Designed and deployed a complete peer-to-peer escrow marketplace. It restricts access to verified university domains and employs Stripe Connect manual capture to hold funds until in-person exchange is validated via QR code.  
-
-                ```mermaid
-                graph TD
-                    Client[Client Browser]
-                        Functions[Cloud Functions for Firebase]
-                            Stripe[Stripe Connect]
-                                Firestore[(Cloud Firestore)]
-
-                                    Client -->|1. Request Payment Intent| Functions
-                                        Functions -->|2. Create Auth Hold| Stripe
-                                            Client -->|3. QR Code Scan on Delivery| Functions
-                                                Functions -->|4. Capture Payment / Escrow Release| Stripe
-                                                    Functions -->|5. Unlock Contact Info| Firestore
-                                                    ```  
-
-                                                      ### 2. [Voice Reader](https://github.com/fumi3333/voice_reader)  
-                                                      > Cross-Platform Mobile Audio Assistant  
-                                                      - Tech: Flutter, Dart, On-device Text-to-Speech  
-
-                                                        ### 3. [ZAX / Self-OS Engine](https://github.com/fumi3333/ZAX)  
-                                                        > Cognitive Architecture & Self-Analysis Toolkit  
-                                                        - Tech: Python, Vector Database, Markdown Synchronization  
-
-                                                          ---  
-
-                                                            ## My Coding Journey (2026)  
-
-                                                              - Commit Pacing: ~4.5 contributions per day in 2026.  
-                                                              - Philosophy: "High-frequency bat swinging." Build fast, deploy securely, analyze the metrics, and iterate.  
-
-                                                                ---  
-
-                                                                  *Feel free to reach out via GitHub Issues or explore my codebases!*
-                                                                  
+- まとめ: https://fumiproject.dev
